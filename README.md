@@ -1,1 +1,3 @@
-# eathard2blog.github.io
+# 一介匹夫的刷题笔记
+
+# 一个小公司码农的奋斗史！
