@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>文件列表</title>
-  <style>
-    ul {
-      list-style-type: none;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 <body>
   <h1>文件列表</h1>
-  <ul id="file-list"></ul>
-  <script>
-    fetch("./")
-      .then(response => response.text())
-      .then(html => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-        const fileList = doc.querySelectorAll("a");
-        const fileListContainer = document.getElementById("file-list");
-
-        fileList.forEach(file => {
-          if (file.textContent !== "../") {
-            const li = document.createElement("li");
-            li.innerHTML = `<a href="${file.getAttribute("href")}">${file.textContent}</a>`;
-            fileListContainer.appendChild(li);
-          }
-        });
-      });
-  </script>
+  <ul>
+    <li><a href=".git">.git</a></li>
+    <li><a href="1.html">1.html</a></li>
+    <li><a href="BotCSB3R7E8NV - Poe (2023_6_30 13_59_58).html">BotCSB3R7E8NV - Poe (2023_6_30 13_59_58).html</a></li>
+    <li><a href="char类型默认是signed的.md">char类型默认是signed的.md</a></li>
+    <li><a href="config.html">config.html</a></li>
+    <li><a href="c和c++对const的理解并不完全相同.md">c和c++对const的理解并不完全相同.md</a></li>
+    <li><a href="gen.py">gen.py</a></li>
+    <li><a href="img">img</a></li>
+    <li><a href="npm-config.html">npm-config.html</a></li>
+    <li><a href="npm-prefix.html">npm-prefix.html</a></li>
+    <li><a href="npm-publish.html">npm-publish.html</a></li>
+    <li><a href="npm-root.html">npm-root.html</a></li>
+    <li><a href="npm-uninstall.html">npm-uninstall.html</a></li>
+    <li><a href="npm-update.html">npm-update.html</a></li>
+    <li><a href="npm.html">npm.html</a></li>
+    <li><a href="qemu-doc.html">qemu-doc.html</a></li>
+    <li><a href="qemu-tech.html">qemu-tech.html</a></li>
+    <li><a href="QEMU_on_Windows.html">QEMU_on_Windows.html</a></li>
+    <li><a href="u.bat">u.bat</a></li>
+    <li><a href="【原创】Linux v4l2框架分析 - LoyenWang - 博客园 (2023_6_28 11_16_58).html">【原创】Linux v4l2框架分析 - LoyenWang - 博客园 (2023_6_28 11_16_58).html</a></li>
+    <li><a href="不同类型的指针不能比较大小.md">不同类型的指针不能比较大小.md</a></li>
+    <li><a href="前加加与后加加.md">前加加与后加加.md</a></li>
+    <li><a href="如何使用linux开发一款蓝牙音箱设备，需要哪些软件 (2023_8_9 10_32_33).html">如何使用linux开发一款蓝牙音箱设备，需要哪些软件 (2023_8_9 10_32_33).html</a></li>
+    <li><a href="安装pulseaudio后无法播放声音 (2023_8_9 14_54_55).html">安装pulseaudio后无法播放声音 (2023_8_9 14_54_55).html</a></li>
+    <li><a href="类型转换d.md">类型转换d.md</a></li>
+    <li><a href="结构体类型的内存对齐.md">结构体类型的内存对齐.md</a></li>
+    <li><a href="自增与加1并不等价.md">自增与加1并不等价.md</a></li>
+  </ul>
 </body>
 </html>
