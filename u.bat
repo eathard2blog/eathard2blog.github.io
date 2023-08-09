@@ -1,4 +1,4 @@
-python3 gen.py
+python.exe .\gen.py
 
 sleep 2
 
